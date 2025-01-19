@@ -1,0 +1,155 @@
+/* Reset margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box; /* Ensures padding and borders don't affect width/height */
+}
+/* Center the navbar and style the links */
+.navbar-nav {
+    text-align: center;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the links horizontally */
+    gap: 3.5rem; /* Add space between links */
+    height: 10vh;
+    width: 100%; /* Ensure the navbar spans full width */
+    background-color: #577BC1;
+}
+
+.navbar-nav .nav-link, .nav-link1 {
+    font-size: 3.5rem; /* Increase font size */
+    font-weight: bold; /* Make the text bold */
+    color: white; /* Text color */
+    transition: color 0.3s ease; /* Smooth hover effect */
+    text-decoration: none; /* Remove underline by default */
+    padding: 1rem 0; /* Add padding to vertically align the links */
+}
+
+/* Adjust padding for "HOME" link */
+.navbar-nav .nav-link1.active {
+    padding: 3.5rem 1; /* Increase padding slightly for "HOME" */
+}
+
+/* Remove underline from the active link */
+.navbar-nav .nav-link1.active, .navbar-nav .nav-link.active {
+    text-decoration: none; /* Remove underline from active link */
+}
+
+.navbar-nav .nav-link1:hover, .nav-link:hover {
+    color: #000957; /* Change color on hover */
+}
+
+/* Add these styles to position the button over the video */
+.video-container {
+    position: relative; /* Needed to position elements within it */
+    width: 100%;
+}
+
+/* Style the button to position it over the video */
+.btn-outline {
+    position: absolute; /* Position the button absolutely within the video container */
+    top: 75vh; /* Position the button towards the bottom */
+    left: 48vh; /* Position the button slightly towards the left */
+    transform: translate(-50%, -50%); /* Adjust the positioning to ensure it's centered relative to its own size */
+    padding: 10px 20px;
+    font-size: 2rem;
+    font-weight: bolder;
+    border: 5px solid #000957;
+    background-color: #577BC1;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 10; /* Ensures the button is above the video */
+}
+
+/* Hover effect for the button */
+.btn-outline:hover {
+    background-color: #000957;
+    color: white;
+}
+
+.page1-container{
+    background-color: white;
+    height: 100%;
+}
+
+/* Carousel container styling */
+.carousel {
+    display: flex;
+    border: solid transparent;
+    width: 50%; /* Adjust width as per your requirement */
+    margin: 5 auto; /* Center the carousel horizontally */
+    float: left; /* Align to the left */
+    height: 70%; /* Maintain aspect ratio */
+    padding-top: 20vh;
+}
+
+/* Carousel images */
+.carousel-inner img {
+    object-fit: cover; /* Ensure the images cover the entire container without distortion */
+    height: 500px; /* Set a fixed height */
+    width: 80%; /* Set width to fill the container */
+    border-radius: 10px; /* Add rounded corners if desired */
+}
+
+/* Add padding or margin to adjust positioning */
+.img-container {
+    padding: 20px;
+    margin: 0;
+    height: auto; /* Ensure container adapts to content */
+}
+
+/* About Section Styling */
+.about-container {
+    display: flex;
+    background-color: #FBFBFB;
+    height: auto; /* Adjusted height to accommodate content */
+    width: 40%;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+    margin-left: 50px; /* Add margin to the left */
+    padding-left: 20px; /* Optional: Adds padding to the left if needed */
+    border-left: 60px solid transparent; /* Optional: Left border if needed */
+}
+
+/* Subtitle styling */
+.section-subtitle {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 5rem; /* Adjust the font size as needed */
+    font-weight: bolder;
+    width: 100%;
+}
+p{
+    color: #000957;
+}
+
+.section {
+    display: block; /* Ensure the section behaves like a block element */
+    font-size: 30px;
+    color: #155E95;
+    text-align: left; /* Align text to the left */
+    margin-left: 0; /* Optional: Ensure no extra left margin */
+    margin-right: 0; /* Optional: Ensure no extra right margin */
+    line-height: 1.5; /* Optional: Improve readability */
+}
+
+/* About text styling */
+.about-text {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-top: 20px;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    text-align: left;
+    list-style-type: disc; /* Adds bullet points */
+}
+
+/* Styling for points in the About text */
+.about-text p {
+    margin-bottom: 10px;
+}
